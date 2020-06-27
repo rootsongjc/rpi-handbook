@@ -1,0 +1,199 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi Handbook – 准备</title>
+    <link>https://jimmysong.io/rpi-handbook/docs/prepare/</link>
+    <description>Recent content in 准备 on Raspberry Pi Handbook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://jimmysong.io/rpi-handbook/docs/prepare/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: 硬件准备</title>
+      <link>https://jimmysong.io/rpi-handbook/docs/prepare/hardware/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimmysong.io/rpi-handbook/docs/prepare/hardware/</guid>
+      <description>
+        
+        
+        
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;声明&lt;/strong&gt;：
+本人与文中的淘宝店铺没有任何利益关系。&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+&lt;p&gt;巧妇难为无米之炊，在正式开始前，首先你需要准备的是当然就是树莓派本身。&lt;/p&gt;
+
+&lt;h2 id=&#34;硬件信息&#34;&gt;硬件信息&lt;/h2&gt;
+
+&lt;p&gt;笔者的树莓派硬件配置如下：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;型号：Raspberry Pi 4B&lt;/li&gt;
+&lt;li&gt;配置：4 核 CPU、8G 内存&lt;/li&gt;
+&lt;li&gt;存储卡：64G MicroSD TF 卡&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;购买链接&#34;&gt;购买链接&lt;/h2&gt;
+
+&lt;p&gt;以下是我在 2020 年 6 月 18 日，通过淘宝购买的树莓派 4 代本体及配件资料，仅供大家参考。&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;商品&lt;/th&gt;
+&lt;th&gt;数量&lt;/th&gt;
+&lt;th&gt;价格&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://item.taobao.com/item.htm?_u=oba4m7ce8db&amp;amp;id=596761703325&#34; target=&#34;_blank&#34;&gt;树莓派 4 代 Raspberrypi4b model B Python 编程 linux 开发板 8gb 8g&lt;/a&gt;（必选）&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;599&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://item.taobao.com/item.htm?_u=oba4m7c4521&amp;amp;id=524240381982&#34; target=&#34;_blank&#34;&gt;闪迪（SanDisk）高速 MicroSD TF 卡 Class10-98MB/S 适用于树莓派&lt;/a&gt;（必选）&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;59&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://item.taobao.com/item.htm?_u=oba4m7c6d3c&amp;amp;id=606745265028&#34; target=&#34;_blank&#34;&gt;树莓派 4 代 4B 专用电源适配器 5V 3A Type-C 带开关按钮充电器&lt;/a&gt;（必选）&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;23&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://item.taobao.com/item.htm?_u=oba4m7c5556&amp;amp;id=44427919831&#34; target=&#34;_blank&#34;&gt;PI-Heatsink kit 为 Raspberry Pi 凉身打造散热片 适用于树莓派&lt;/a&gt;（可选）&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;6&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&#34;https://item.taobao.com/item.htm?spm=a1z09.2.0.0.21f02e8dypBoEv&amp;amp;id=615700329002&amp;amp;_u=oba4m7cd406&#34; target=&#34;_blank&#34;&gt;树莓派 4 代 CPU 散热器 U 型热管塔式 炫光 RGB 风扇 ICE Tower 冰塔式&lt;/a&gt;（可选）&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;119&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;总计&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;796&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;下图为以上商品的组图。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;raspberry-pi-4b.jpg&#34; alt=&#34;树莓派 4b&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;组装&#34;&gt;组装&lt;/h2&gt;
+
+&lt;p&gt;树莓派本身无需组装，只需安装散热器、存储卡并接通电源即可。树莓派商品包装中内置了说明书（无中文说明），无需阅读。&lt;/p&gt;
+
+&lt;h3 id=&#34;安装散热器&#34;&gt;安装散热器&lt;/h3&gt;
+
+&lt;p&gt;铜铝散热片基本没有用处，而且因为安装了散热器挡住了内存上方的空间，导致无法为内存安装铜制散热片，但 U 盘驱动器上方依然有空间安装散热片。&lt;/p&gt;
+
+&lt;h3 id=&#34;安装存储卡&#34;&gt;安装存储卡&lt;/h3&gt;
+
+&lt;p&gt;在安装存储卡之前，需要先向存储卡中写入操作系统。请参考&lt;a href=&#34;../boot&#34;&gt;启动&lt;/a&gt;。&lt;/p&gt;
+
+&lt;p&gt;组装完成后接入电源，黑暗中可以看到散热器的炫光，基本听不到风扇的声音。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;raspberry-pi-assembled.jpg&#34; alt=&#34;组装好的树莓派&#34; /&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 安装系统</title>
+      <link>https://jimmysong.io/rpi-handbook/docs/prepare/boot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimmysong.io/rpi-handbook/docs/prepare/boot/</guid>
+      <description>
+        
+        
+        
+
+&lt;p&gt;因为我们没有准备 HDMI 连接线、显示器和外接键盘，因此无法使用有线方式登录树莓派的操作系统。因此我们将配置树莓派系统中的 WiFi 连接信息，让其在开机后自动接入家庭的 WiFi，然后通过路由器的后台页面获得树莓派的 IP 地址，再使用 SSH 登录树莓派。&lt;/p&gt;
+
+&lt;h2 id=&#34;准备的软件&#34;&gt;准备的软件&lt;/h2&gt;
+
+&lt;p&gt;在安装的操作系统前需要准备的有：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.raspberrypi.org/downloads/&#34; target=&#34;_blank&#34;&gt;Raspberry Pi Imager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.raspberrypi.org/downloads/raspberry-pi-os/&#34; target=&#34;_blank&#34;&gt;Raspberry Pi OS (32-bit) with desktop and recommended software&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;访问 &lt;a href=&#34;https://www.raspberrypi.org/downloads/&#34; target=&#34;_blank&#34;&gt;https://www.raspberrypi.org/downloads/&lt;/a&gt; 下载 Raspberry Pi Imager 用于向存储卡写入操作系统。&lt;/p&gt;
+
+&lt;p&gt;手动下载树莓派 OS（32 位），该系统对硬件的兼容性最好，且支持的软件也更多，不推荐使用 Ubuntu 64 位系统。&lt;/p&gt;
+
+&lt;p&gt;系统下载完成后再使用 Raspberry Pi Imager 将系统写入存储卡。&lt;/p&gt;
+
+&lt;h2 id=&#34;配置-wifi&#34;&gt;配置 WiFi&lt;/h2&gt;
+
+&lt;p&gt;在 boot 磁盘的根目录创建一个 &lt;code&gt;wpa_supplicant.conf&lt;/code&gt; 文件，内容如下。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span style=&#34;color:#c4a000&#34;&gt;ctrl_interface&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;DIR=/var/run/wpa_supplicant GROUP=netdev&lt;/span&gt;
+&lt;span style=&#34;color:#c4a000&#34;&gt;update_config&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;1&lt;/span&gt;
+&lt;span style=&#34;color:#c4a000&#34;&gt;country&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;lt;Insert country code here&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color:#c4a000&#34;&gt;network&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;{
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; ssid=&amp;#34;&amp;lt;Name of your WiFi&amp;gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt; psk=&amp;#34;&amp;lt;Password for your WiFi&amp;gt;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#c4a000&#34;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其中：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;country&lt;/code&gt; 为&lt;a href=&#34;https://www.iso.org/obp/ui/&#34; target=&#34;_blank&#34;&gt;国家代码&lt;/a&gt;，中国大陆为 &lt;code&gt;CN&lt;/code&gt;；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ssid&lt;/code&gt; 为 WiFi 名称；&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;psk&lt;/code&gt; 为 WiFi 密码；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;开启-ssh&#34;&gt;开启 SSH&lt;/h2&gt;
+
+&lt;p&gt;只需要在 boot 磁盘的根目录创建一个名为 &lt;code&gt;ssh&lt;/code&gt; 的文件即可。&lt;/p&gt;
+
+&lt;h2 id=&#34;默认的账号密码&#34;&gt;默认的账号密码&lt;/h2&gt;
+
+&lt;p&gt;以下为树莓派操作系统默认的用户名和密码。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;默认用户名：&lt;code&gt;pi&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;默认密码：&lt;code&gt;raspberry&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;获取树莓派的-ip-地址&#34;&gt;获取树莓派的 IP 地址&lt;/h2&gt;
+
+&lt;p&gt;查看家庭使用的路由器背面的连接信息，如果使用的是 TPLink 可以通过 &lt;a href=&#34;http://tplogin.cn&#34; target=&#34;_blank&#34;&gt;http://tplogin.cn&lt;/a&gt; 登录路由器管理后台。&lt;/p&gt;
+
+&lt;p&gt;登录到后台后选择「设备管理」里面可以看到一个名为 &lt;code&gt;raspberrypi&lt;/code&gt; 的设备，查看该设备的详细信息可以看到它的 IP 地址。&lt;/p&gt;
+
+&lt;h2 id=&#34;登录树莓派&#34;&gt;登录树莓派&lt;/h2&gt;
+
+&lt;p&gt;当你的电脑跟树莓派连接的是同一个家庭 WiFi 的时候，可以使用下面的命令登录树莓派。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;ssh pi@&amp;lt;树莓派的 IP 地址&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;密码为 &lt;code&gt;raspberry&lt;/code&gt;。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

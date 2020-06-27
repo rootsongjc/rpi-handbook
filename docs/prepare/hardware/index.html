@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="generator" content="Hugo 0.58.3" />
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/rpi-handbook/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/rpi-handbook/favicons/android-192x192.png" sizes="192x192">
+
+<title>硬件准备 | Raspberry Pi Handbook</title><meta property="og:title" content="硬件准备" />
+<meta property="og:description" content="在正式开始之前需要准备的硬件。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jimmysong.io/rpi-handbook/docs/prepare/hardware/" />
+
+<meta itemprop="name" content="硬件准备">
+<meta itemprop="description" content="在正式开始之前需要准备的硬件。">
+
+
+
+<meta itemprop="wordCount" content="99">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="硬件准备"/>
+<meta name="twitter:description" content="在正式开始之前需要准备的硬件。"/>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-93485976-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+<link rel="preload" href="/rpi-handbook/scss/main.min.fa7ce03c5f09ed6b97ea0a8f4b6e744788216d8b3d1dfacc3f8de67e8d2f3fdc.css" as="style">
+<link href="/rpi-handbook/scss/main.min.fa7ce03c5f09ed6b97ea0a8f4b6e744788216d8b3d1dfacc3f8de67e8d2f3fdc.css" rel="stylesheet" integrity="">
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+    <title>硬件准备 | Raspberry Pi Handbook</title>
+  </head>
+  <body class="td-page">
+    <header>
+      
+<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+        <a class="navbar-brand" href="/rpi-handbook/">
+        <span class="font-weight-bold">Raspberry Pi Handbook</span>
+	</a>
+	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
+		<ul class="navbar-nav mt-2 mt-lg-0">
+			
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				<a class="nav-link" href="https://jimmysong.io/" target="_blank" ><span>主页</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				<a class="nav-link" href="https://github.com/rootsongjc/rpi-handbook" target="_blank" ><span>GitHub</span></a>
+			</li>
+			
+			<li class="nav-item mr-4 mb-2 mb-lg-0">
+				
+				
+				
+				
+				
+				
+				<a class="nav-link active" href="/rpi-handbook/docs/" ><span class="active">手册</span></a>
+			</li>
+			
+			
+			
+		</ul>
+	</div>
+	<div class="navbar-nav d-none d-lg-block">
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 搜索本站" aria-label="搜索本站" autocomplete="off">
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <div class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            
+
+
+
+
+<div id="td-sidebar-menu" class="td-sidebar__inner">
+  
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+<input type="search" class="form-control td-search-input" placeholder="&#xf002 搜索本站" aria-label="搜索本站" autocomplete="off">
+
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ml-3 fas fa-bars" type="button" data-toggle="collapse" data-target="#td-section-nav" aria-controls="td-docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  
+  <nav class="collapse td-sidebar-nav pt-2 pl-4" id="td-section-nav">
+    
+    
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/rpi-handbook/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">手册</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="rpi-handbook-docs">
+      
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/rpi-handbook/docs/intro/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">前言</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rpi-handbook-docs-intro">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rpi-handbook-docs-intro-about" href="/rpi-handbook/docs/intro/about/">树莓派简介</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rpi-handbook-docs-intro-notes" href="/rpi-handbook/docs/intro/notes/">注意事项</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/rpi-handbook/docs/prepare/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">准备</a>
+  </li>
+  <ul>
+    <li class="collapse show" id="rpi-handbook-docs-prepare">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page  active" id="m-rpi-handbook-docs-prepare-hardware" href="/rpi-handbook/docs/prepare/hardware/">硬件准备</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rpi-handbook-docs-prepare-boot" href="/rpi-handbook/docs/prepare/boot/">安装系统</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/rpi-handbook/docs/kubernetes/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Kubernetes</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rpi-handbook-docs-kubernetes">
+      
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rpi-handbook-docs-kubernetes-k3s" href="/rpi-handbook/docs/kubernetes/k3s/">k3s</a>
+      
+      
+      
+      
+      
+      <a class="td-sidebar-link td-sidebar-link__page " id="m-rpi-handbook-docs-kubernetes-access" href="/rpi-handbook/docs/kubernetes/access/">访问</a>
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/rpi-handbook/docs/tools/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">工具</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rpi-handbook-docs-tools">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+      
+      
+
+
+
+
+
+
+<ul class="td-sidebar-nav__section pr-md-3">
+  <li class="td-sidebar-nav__section-title">
+    <a  href="/rpi-handbook/docs/issues/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">已知问题</a>
+  </li>
+  <ul>
+    <li class="collapse " id="rpi-handbook-docs-issues">
+      
+      
+      
+    </li>
+  </ul>
+</ul>
+
+      
+      
+    </li>
+  </ul>
+</ul>
+
+  </nav>
+</div>
+
+
+
+
+          </div>
+          <div class="d-none d-xl-block col-xl-2 td-toc d-print-none">
+            
+
+
+
+
+<div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
+
+
+
+
+
+<a href="https://github.com/rootsongjc/rpi-handbook/edit/master/content/zh/docs/prepare/hardware/index.md" target="_blank"><i class="fa fa-edit fa-fw"></i> 编辑本页</a>
+<a href="https://github.com/rootsongjc/rpi-handbook/issues/new?title=%e7%a1%ac%e4%bb%b6%e5%87%86%e5%a4%87" target="_blank"><i class="fab fa-github fa-fw"></i> 创建文档 issue</a>
+
+
+<a href="https://github.com/rootsongjc/rpi-handbook/issues/new" target="_blank"><i class="fas fa-tasks fa-fw"></i> 创建项目 issue</a>
+
+</div>
+
+
+
+
+
+
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#硬件信息">硬件信息</a></li>
+<li><a href="#购买链接">购买链接</a></li>
+<li><a href="#组装">组装</a>
+<ul>
+<li><a href="#安装散热器">安装散热器</a></li>
+<li><a href="#安装存储卡">安装存储卡</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+
+
+
+          </div>
+          <main class="col-12 col-md-9 col-xl-8 pl-md-5" role="main">
+            <nav aria-label="breadcrumb" class="d-none d-md-block d-print-none">
+	<ol class="breadcrumb spb-1">
+		
+
+
+
+
+
+
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/rpi-handbook/docs/">手册</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="/rpi-handbook/docs/prepare/">准备</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="/rpi-handbook/docs/prepare/hardware/">硬件准备</a>
+</li>
+
+	</ol>
+</nav	>
+
+
+            
+<div class="td-content">
+	<h1>硬件准备</h1>
+	<div class="lead">在正式开始之前需要准备的硬件。</div>
+	
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>声明</strong>：
+本人与文中的淘宝店铺没有任何利益关系。</p>
+
+</div>
+
+
+<p>巧妇难为无米之炊，在正式开始前，首先你需要准备的是当然就是树莓派本身。</p>
+
+<h2 id="硬件信息">硬件信息</h2>
+
+<p>笔者的树莓派硬件配置如下：</p>
+
+<ul>
+<li>型号：Raspberry Pi 4B</li>
+<li>配置：4 核 CPU、8G 内存</li>
+<li>存储卡：64G MicroSD TF 卡</li>
+</ul>
+
+<h2 id="购买链接">购买链接</h2>
+
+<p>以下是我在 2020 年 6 月 18 日，通过淘宝购买的树莓派 4 代本体及配件资料，仅供大家参考。</p>
+
+<table>
+<thead>
+<tr>
+<th>商品</th>
+<th>数量</th>
+<th>价格</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><a href="https://item.taobao.com/item.htm?_u=oba4m7ce8db&amp;id=596761703325" target="_blank">树莓派 4 代 Raspberrypi4b model B Python 编程 linux 开发板 8gb 8g</a>（必选）</td>
+<td>1</td>
+<td>599</td>
+</tr>
+
+<tr>
+<td><a href="https://item.taobao.com/item.htm?_u=oba4m7c4521&amp;id=524240381982" target="_blank">闪迪（SanDisk）高速 MicroSD TF 卡 Class10-98MB/S 适用于树莓派</a>（必选）</td>
+<td>1</td>
+<td>59</td>
+</tr>
+
+<tr>
+<td><a href="https://item.taobao.com/item.htm?_u=oba4m7c6d3c&amp;id=606745265028" target="_blank">树莓派 4 代 4B 专用电源适配器 5V 3A Type-C 带开关按钮充电器</a>（必选）</td>
+<td>1</td>
+<td>23</td>
+</tr>
+
+<tr>
+<td><a href="https://item.taobao.com/item.htm?_u=oba4m7c5556&amp;id=44427919831" target="_blank">PI-Heatsink kit 为 Raspberry Pi 凉身打造散热片 适用于树莓派</a>（可选）</td>
+<td>1</td>
+<td>6</td>
+</tr>
+
+<tr>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.21f02e8dypBoEv&amp;id=615700329002&amp;_u=oba4m7cd406" target="_blank">树莓派 4 代 CPU 散热器 U 型热管塔式 炫光 RGB 风扇 ICE Tower 冰塔式</a>（可选）</td>
+<td>1</td>
+<td>119</td>
+</tr>
+
+<tr>
+<td><strong>总计</strong></td>
+<td><strong>5</strong></td>
+<td><strong>796</strong></td>
+</tr>
+</tbody>
+</table>
+
+<p>下图为以上商品的组图。</p>
+
+<p><img src="raspberry-pi-4b.jpg" alt="树莓派 4b" /></p>
+
+<h2 id="组装">组装</h2>
+
+<p>树莓派本身无需组装，只需安装散热器、存储卡并接通电源即可。树莓派商品包装中内置了说明书（无中文说明），无需阅读。</p>
+
+<h3 id="安装散热器">安装散热器</h3>
+
+<p>铜铝散热片基本没有用处，而且因为安装了散热器挡住了内存上方的空间，导致无法为内存安装铜制散热片，但 U 盘驱动器上方依然有空间安装散热片。</p>
+
+<h3 id="安装存储卡">安装存储卡</h3>
+
+<p>在安装存储卡之前，需要先向存储卡中写入操作系统。请参考<a href="../boot">启动</a>。</p>
+
+<p>组装完成后接入电源，黑暗中可以看到散热器的炫光，基本听不到风扇的声音。</p>
+
+<p><img src="raspberry-pi-assembled.jpg" alt="组装好的树莓派" /></p>
+
+	
+	
+	<div class="text-muted mt-5 pt-3 border-top">修改于 0001年1月1日
+</div>
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      
+<footer class="bg-dark py-5 row d-print-none" align="center">
+  <div class="container-fluid mx-sm-5">
+    <div class="row">
+      <div class="col-12">
+        
+        
+        
+<ul class="list-inline mb-0">
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Twitter" aria-label="Twitter">
+    <a class="text-white" target="_blank" href="https://twitter.com/jimmysongio">
+      <i class="fab fa-twitter"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="GitHub" aria-label="GitHub">
+    <a class="text-white" target="_blank" href="https://github.com/rootsongjc">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+  <li class="list-inline-item mx-2 h3" data-toggle="tooltip" data-placement="top" title="Website" aria-label="Website">
+    <a class="text-white" target="_blank" href="https://jimmysong.io">
+      <i class="fas fa-globe-asia"></i>
+    </a>
+  </li>
+  
+</ul>
+
+        
+        
+        <div class="col-12">
+        <small class="text-white">&copy; 2020 Jimmy Song 保留所有权利</small>
+        
+	    
+        </div>
+     </div>
+   </div>
+</footer>
+
+
+
+<!-- Baidu analysis -->
+<meta name="baidu-site-verification" content="g8IYR9SNLF" />
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?11f7d254cfa4e0ca44b175c66d379ecc";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+    </div>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+
+
+<script src="/rpi-handbook/js/main.min.a18f90af7ffa7836aa2e2b488bd881e9e2bb2540c7649ba3b566ebd940ab6bc2.js" integrity="sha256-oY&#43;Qr3/6eDaqLitIi9iB6eK7JUDHZJujtWbr2UCra8I=" crossorigin="anonymous"></script>
+
+
+
+
+
+  </body>
+</html>

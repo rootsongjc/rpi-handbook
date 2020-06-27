@@ -1,0 +1,68 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi Handbook – Kubernetes</title>
+    <link>https://jimmysong.io/rpi-handbook/docs/kubernetes/</link>
+    <description>Recent content in Kubernetes on Raspberry Pi Handbook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="https://jimmysong.io/rpi-handbook/docs/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: k3s</title>
+      <link>https://jimmysong.io/rpi-handbook/docs/kubernetes/k3s/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimmysong.io/rpi-handbook/docs/kubernetes/k3s/</guid>
+      <description>
+        
+        
+        
+
+&lt;p&gt;因为使用习惯问题，我们使用 Docker 作为 Kubernetes 容器运行时（k3s 默认使用 &lt;code&gt;containerd&lt;/code&gt;），并缺省安装 &lt;code&gt;traefik&lt;/code&gt;、&lt;code&gt;servicelb&lt;/code&gt;、&lt;code&gt;coredns&lt;/code&gt;、&lt;code&gt;local-storage&lt;/code&gt;、&lt;code&gt;metrics-server&lt;/code&gt; 等。&lt;/p&gt;
+
+&lt;h2 id=&#34;准备&#34;&gt;准备&lt;/h2&gt;
+
+&lt;p&gt;安装 k3s 前需要先开启 cgroup memory。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;color:#204a87&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;cgroup_memory=1 cgroup_enable=memory&amp;#34;&lt;/span&gt;&amp;gt;&amp;gt;/boot/cmdline.txt&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;中国大陆用户执行下面的命令安装：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -sfL https://docs.rancher.cn/k3s/k3s-install.sh &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;INSTALL_K3S_MIRROR&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;cn &lt;span style=&#34;color:#000&#34;&gt;K3S_KUBECONFIG_MODE&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;666&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;INSTALL_K3S_EXEC&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;server --docker&amp;#34;&lt;/span&gt; sh -&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;其他地区的用户使用下面的命令安装：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;curl -sfL https://get.k3s.io &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;K3S_KUBECONFIG_MODE&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;666&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;INSTALL_K3S_EXEC&lt;/span&gt;&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;server --docker&amp;#34;&lt;/span&gt; sh -&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;安装完成后 k3s 会自动启动，并为你安装好了 &lt;code&gt;kubectl&lt;/code&gt;，现在你可以使用 &lt;code&gt;kubectl&lt;/code&gt; 来访问和管理你的 Kubernetes 集群了。&lt;/p&gt;
+
+&lt;h2 id=&#34;卸载&#34;&gt;卸载&lt;/h2&gt;
+
+&lt;p&gt;执行下面的卸载 k3s 及相关容器。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;k3s-uninstall.sh
+docker rm -f &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;$(&lt;/span&gt;docker ps -qa&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.rancher.cn/k3s/&#34; target=&#34;_blank&#34;&gt;k3s - 5 less than k8s - docs.rancher.cn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: 访问</title>
+      <link>https://jimmysong.io/rpi-handbook/docs/kubernetes/access/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jimmysong.io/rpi-handbook/docs/kubernetes/access/</guid>
+      <description>
+        
+        
+        &lt;p&gt;待补充。&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
