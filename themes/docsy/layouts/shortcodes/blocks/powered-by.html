@@ -1,0 +1,10 @@
+{{ $logo := .Get "logo" }}
+{{ $title := .Get "title" }}
+{{ $url := .Get "url" }}
+<div class="col-lg-4 mb-5 mb-lg-0 text-center ">
+  <div class="mb-4 h1">
+      <img src="{{ $logo }}" alt="{{ $title }}" width="30%">
+  </div>
+  <a href="{{ $url }}"><h4 class="h3">{{ $title }}</h4></a>
+  <p class="mb-0">{{ .Inner }}</p>
+</div>
