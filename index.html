@@ -124,7 +124,6 @@ if (!doNotTrack) {
 
 
 
-
 <link rel="preload" as="image" href="/rpi-handbook/images/cover.gif" media="(max-width: 1200px)">
 <link rel="preload" as="image" href="/rpi-handbook/images/cover.gif" media="(min-width: 1200px)">
 <style>
@@ -151,7 +150,7 @@ if (!doNotTrack) {
         参考手册<i class="fas fa-arrow-alt-circle-right ml-2"></i>
     </a>
     <a class="btn btn-lg btn-secondary mr-3 mb-4" href="https://github.com/rootsongjc/rpi-handbook">
-        GitHub <i class="fab fa-github ml-2 "></i>
+        GitHub <i class="fab fa-github ml-2"></i>
     </a>
     <p class="lead mt-5">仅需一台电脑和一台连接了互联网的家用路由器，即可轻松开启树莓派上的云原生之旅！</p>
         
@@ -168,24 +167,35 @@ if (!doNotTrack) {
 </section>
 
 
-<div id="td-block-1">
-    <div id="overview">
-        <div class="contain">
-            <h2 class="section-head">为什么使用树莓派？</h2>
-            <p>
-                云原生时代，你需要一个私家工作站。</br>
-                树莓派以其低廉的价格，开放的架构，可以让您充分享受 DIY 的乐趣。</br>
-                家庭影院、NAS、VPN、代码托管、CI、IoT、环境监测、网站服务器等，更多用途等待你探索。</br>
-                请在家中准备好电脑、路由器，<a href="docs">树莓派 Handbook</a> 将带您从零开始构建自己的 Kubernetes 环境，开启云原生之旅！
-            </p>
-        </div>
-    </div>
+<div id="overview">
+  <div class="contain">
+    <h3 class="section-head">为什么使用树莓派？</h4>
+    <p>云原生时代，你需要一个私家工作站。
+树莓派以其低廉的价格，开放的架构，可以让您充分享受 DIY 的乐趣。</br>
+家庭影院、NAS、VPN、代码托管、CI、IoT、环境监测、网站服务器等，更多用途等待你探索。</br>
+请在家中准备好电脑、路由器，<a href="docs/">树莓派 Handbook</a> 将带您从零开始构建自己的 Kubernetes 环境，开启云原生之旅！</p>
+  </div>
 </div>
 
 
 
 
+
 <a id="td-block-1" class="td-offset-anchor"></a>
+<section class="row td-box td-box--1 position-relative td-box--gradient td-box--height-auto">
+	<div class="container text-center td-arrow-down">
+		<span class="h4 mb-0">
+			树莓派云原生工作站内含下列组件
+		</span>
+	</div>
+</section>
+
+
+
+
+
+
+<a id="td-block-2" class="td-offset-anchor"></a>
 <section class="row td-box td-box--primary td-box--gradient td-box--height-auto">
 	<div class="col">
 		<div class="row ">
@@ -226,6 +236,14 @@ if (!doNotTrack) {
       <img src="images/k9s.png" alt="k9s" width="30%">
   </div>
   <a href="https://k9scli.io"><h4 class="h3">k9s</h4></a>
+  <p class="mb-0"></p>
+</div>
+
+<div class="col-lg-4 mb-5 mb-lg-0 text-center ">
+  <div class="mb-4 h1">
+      <img src="images/zerotier.png" alt="zerotier" width="30%">
+  </div>
+  <a href="http://zerotier.com/"><h4 class="h3">zerotier</h4></a>
   <p class="mb-0"></p>
 </div>
 
