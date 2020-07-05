@@ -44,4 +44,6 @@ title = "使用树莓派打造云原生私家工作站"
 {{% /blocks/powered-by %}}
 {{% blocks/powered-by logo="images/zerotier.png" title="zerotier" url="http://zerotier.com/" %}}
 {{% /blocks/powered-by %}}
+{{% blocks/powered-by logo="images/shortcuts.png" title="shortcuts" url="https://support.apple.com/en-us/HT208309" %}}
+{{% /blocks/powered-by %}}
 {{< /blocks/section >}}
